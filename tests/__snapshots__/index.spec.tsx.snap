@@ -1,11 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`temp render 1`] = `
-<Temp>
-  <h2>
-    <div>
-      HI
+<ImageFollow>
+  <a
+    className="react-image-follow"
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+    style={
+      Object {
+        "borderRadius": "8px",
+        "height": "200px",
+        "width": "300px",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="react-image-follow-wrapper"
+      style={
+        Object {
+          "borderRadius": "8px",
+        }
+      }
+    >
+      <img
+        className="react-image-follow-img"
+        style={
+          Object {
+            "borderRadius": "8px",
+          }
+        }
+      />
     </div>
-  </h2>
-</Temp>
+  </a>
+</ImageFollow>
 `;

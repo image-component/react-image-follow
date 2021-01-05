@@ -11,7 +11,8 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "@@/*": ["src/.umi/*"],
+      "react-image-follow": ["src/index.ts"]
     },
     "allowSyntheticDefaultImports": true
   },

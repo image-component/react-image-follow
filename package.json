@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "react-component-template",
-  "version": "1.0.1",
+  "name": "react-image-follow",
+  "version": "0.0.1",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -31,34 +31,37 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/one-template/react-component-template",
+    "url": "https://github.com/image-component/react-image-follow",
     "branch": "main"
   },
   "author": "xrkffgg",
-  "homepage": "https://one-template.github.io/react-component-template/",
+  "homepage": "https://github.com/image-component/react-image-follow",
   "keywords": [
     "component",
     "react",
-    "template"
+    "image",
+    "follow"
   ],
   "files": [
     "assets/*.css",
     "dist",
     "README.md",
-    "docs/changelog.md"
+    "CHANGELOG.md"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/one-template/react-component-template/issues"
+    "url": "https://github.com/image-component/react-image-follow/issues"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5"
+    "@babel/runtime": "^7.12.5",
+    "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.16",
     "@types/react": "^16.9.2",

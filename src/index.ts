@@ -1,4 +1,4 @@
-import Temp, { TempProps } from './template';
+import ImageFollow, { ImageFollowProps } from './template';
 
-export { TempProps };
-export default Temp;
+export { ImageFollowProps };
+export default ImageFollow;

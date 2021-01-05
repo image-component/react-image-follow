@@ -1,9 +1,13 @@
 # 🎁 Demo
 
-## Demo1
+## Base
 
-<code src="./example/one.tsx">
+<code src="./example/base.tsx">
 
-## Demo2
+## Extra
 
-<code src="./example/two.tsx">
+<code src="./example/extra.tsx">
+
+## Link
+
+<code src="./example/link.tsx">

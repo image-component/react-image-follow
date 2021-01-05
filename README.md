@@ -1,119 +1,61 @@
-# 🌈 react-component-template
+# 🌈 react-image-follow
 
-A template for rapid development of React components, which satisfies component development, testing, packaging, release, document development, document packaging, and document deployment.
+A React image component. The image follow with the mouse.
 
-English | [简体中文](./README.zh-CN.md)
+[![npm](https://img.shields.io/npm/v/react-image-follow?style=flat-square&color=orange)](https://www.npmjs.com/package/react-image-follow) [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) ![](https://github.com/image-component/react-image-follow/workflows/ci/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/react-image-follow/main?color=%23722ed1&style=flat-square) [![codecov](https://codecov.io/gh/image-component/react-image-follow/branch/main/graph/badge.svg?token=PYD7S8BHOB)](https://codecov.io/gh/image-component/react-image-follow) ![](https://img.shields.io/npm/dt/react-image-follow?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/react-image-follow?style=flat-square&color=red)
 
-## 💖 How to use?
+## 📚 Example
 
-![](./assets/1.png)
+Online: https://image-component.github.io/react-image-follow/
 
-## 💎 Catalog Introduction
+## 🌀 Template
 
-```
-├── assets                 Store fixed resources
-├── docs                   Component documentation
-│   ├── example            Demo tsx
-│   ├── changelog.md       Used to display component history
-│   └── demo.md            Used to display component Demo
-├── src                    Component home directory
-│   ├── index.ts           Component registration
-│   └── template.tsx       Component implementation code
-├── tests                  Component test code
-│   ├── __snapshots__      Snapshot test file output without manual modification
-│   ├── setup.ts           Init jest script
-│   └── index.spec.tsx     Test file
-├── .eslintrc.js           eslint config
-├── .fatherrc.ts           father config
-├── .umirc.ts              dumi config
-├── jest.config.js         jest config
-└── tsconfig.json          typescript config
-```
+https://github.com/one-template/react-component-template
 
-The rest of the documents can be consulted by yourself.
-
-## 🤖 Command introduction
-
-| Name                     | Description              | Remarks                                                                                                            |
-| ------------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| `npm run start`          | Component development    | Document usage [dumi](https://github.com/umijs/dumi), component development and documentation development together |
-| `npm run test`           | Component test           | -                                                                                                                  |
-| `npm run lint`           | eslint verify            | -                                                                                                                  |
-| `npm run build`          | Component packaging      | Use [father](https://github.com/umijs/father)                                                                      |
-| `npm run coverage`       | Code coverage review     | -                                                                                                                  |
-| `npm publish`            | Component release        | It is recommended to remove prepublishOnly for the first time                                                      |
-| `npm run docs:build`     | Document packaging       | -                                                                                                                  |
-| `npm run docs-dev:build` | Document packaging       | Use dumi dev environment                                                                                           |
-| `npm run docs:deploy`    | Document release         | The default is to use GitHub Pages                                                                                 |
-| `npm run deploy`         | Document package release | -                                                                                                                  |
-
-## 🍭 Component
-
-### Development
+## 📦 Install
 
 ```bash
-npm i
-npm run start
-# http://localhost:8080/
+npm i react-image-follow
+# or
+yarn add react-image-follow
 ```
 
-### Test
+## 🎉 Usage
 
-```
-npm run test
-```
+```js
+import Imagefollow from 'react-image-follow';
+import 'react-image-follow/assets/index.css';
 
-### Unpack
+const src =
+  'https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true';
 
-```bash
-npm run build
-```
-
-- Use [father](https://github.com/umijs/father)
-- More view official website configuration
-- The package file is generated in the dist file by default
-
-### Release
-
-> `package.json` introduction
-
-1. If you want to publish npm, `private` needs to be set to `false`.
-2. The build command can be modified according to actual conditions.
-3. After main decides to install the component, import points to it.
-4. files Contains the files at the time of publishing, and includes README.md by default.
-5. Others can be understood according to the meaning of the word.
-
-## 📚 Documentation
-
-### Start
-
-```bash
-npm run start
+export default () => (
+  <>
+    <Imagefollow src={src} />
+  </>
+);
 ```
 
-### Online preview
+## 📔 API
 
-https://one-template.github.io/react-component-template/
+| Property  | Description                         | Type          | Required | Default | Version |
+| --------- | ----------------------------------- | ------------- | -------- | ------- | ------- |
+| alt       | The alt of the image.               | string        | ✖        | -       | 1.0.0   |
+| className | Component extra class.              | string        | ✖        | -       | 1.0.0   |
+| radius    | The border radius of the component. | number        | ✖        | 8       | 1.0.0   |
+| src       | The src of the image.               | string        | ✔        | -       | 1.0.0   |
+| style     | Component extra style.              | CSSProperties | ✖        | -       | 1.0.0   |
+| width     | The width of the component.         | number        | ✖        | 300     | 1.0.0   |
+| height    | The height of the component.        | number        | ✖        | 200     | 1.0.0   |
+| href      | Component click link                | string        | ✖        | -       | 1.0.0   |
 
-### Description
+## 🔨 Development
 
-- Use [dumi](https://github.com/umijs/dumi)
-- Use basic layout, please add more by yourself
-- Because the document is deployed on GitHub Pages, the `base` and `publicPath` of `.umirc.ts` are set to the project name
-- One 🌰 : [ant-design-colorful](https://ant-design-colorful.github.io/ant-design-colorful/)
-
-## 🎈 Aide
-
-- [Quickly modify the project name](./rename.ts)
-- [Issue template](https://github.com/one-template/issue-template)
-- [PR template](https://github.com/one-template/pr-template)
-- [Actions use](https://github.com/github-actions-workflows/.github)
-
-## 🎉 Who are using？
-
-- [image-component/react-image-shadow](https://github.com/image-component/react-image-shadow)
-- [image-component/react-image-dangling](https://github.com/image-component/react-image-dangling)
+```
+yarn
+yarn start
+```
 
 ## License
 
-[MIT](https://github.com/one-template/react-component-template/blob/main/LICENSE)
+[MIT](https://github.com/image-component/react-image-follow/blob/main/LICENSE)
