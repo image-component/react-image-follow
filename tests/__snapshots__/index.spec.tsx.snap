@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`temp render 1`] = `
-<ImageFollow>
+<ImageFollow
+  src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
+>
   <a
     className="react-image-follow"
     onMouseLeave={[Function]}
@@ -23,12 +25,57 @@ exports[`temp render 1`] = `
     >
       <img
         className="react-image-follow-img"
+        src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
         style={
           Object {
             "borderRadius": "8px",
           }
         }
       />
+    </div>
+  </a>
+</ImageFollow>
+`;
+
+exports[`temp render children 1`] = `
+<ImageFollow
+  src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
+>
+  <a
+    className="react-image-follow"
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+    style={
+      Object {
+        "borderRadius": "8px",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="react-image-follow-wrapper"
+      style={
+        Object {
+          "borderRadius": "8px",
+        }
+      }
+    >
+      <img
+        className="react-image-follow-img"
+        src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
+        style={
+          Object {
+            "borderRadius": "8px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="react-image-follow-content"
+    >
+      <h2>
+        test
+      </h2>
     </div>
   </a>
 </ImageFollow>
