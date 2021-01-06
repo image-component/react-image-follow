@@ -61,7 +61,7 @@ const ImageFollow = (props: ImageFollowProps) => {
     const transformImg = `translate(calc(${x} / 20 * 1px), calc(${y} / 20 * 1px))`;
     setImgStyle({
       ...imgBaseStyle,
-      transformImg,
+      transform: transformImg,
     });
   };
 

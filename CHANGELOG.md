@@ -1,5 +1,11 @@
 # 🗓 Changelog
 
+## 1.2.2
+
+`2021-01-06`
+
+- fix: img srtyle when move.
+
 ## 1.2.1
 
 `2021-01-06`
