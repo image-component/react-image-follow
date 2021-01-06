@@ -44,25 +44,24 @@ const ImageFollow = (props: ImageFollowProps) => {
   const cls = classNames('react-image-follow', className);
 
   const move = (e: any) => {
-    if (!cardRef.current) {
-      return;
+    if (cardRef.current) {
+      const rect = cardRef.current.getBoundingClientRect();
+      const { clientX, clientY } = e.nativeEvent;
+      const x = clientX - (rect.left + Math.floor(rect.width / 2));
+      const y = clientY - (rect.top + Math.floor(rect.height / 2));
+
+      const transformWrapper = `scale(1.025) translate(calc(${x} / 50 * 1px), calc(${y} / 50 * 1px))`;
+      setWrapperStyle({
+        ...wrapperBaseStyle,
+        transform: transformWrapper,
+      });
+
+      const transformImg = `translate(calc(${x} / 20 * 1px), calc(${y} / 20 * 1px))`;
+      setImgStyle({
+        ...imgBaseStyle,
+        transform: transformImg,
+      });
     }
-    const rect = cardRef.current.getBoundingClientRect();
-    const { clientX, clientY } = e.nativeEvent;
-    const x = clientX - (rect.left + Math.floor(rect.width / 2));
-    const y = clientY - (rect.top + Math.floor(rect.height / 2));
-
-    const transformWrapper = `scale(1.025) translate(calc(${x} / 50 * 1px), calc(${y} / 50 * 1px))`;
-    setWrapperStyle({
-      ...wrapperBaseStyle,
-      transform: transformWrapper,
-    });
-
-    const transformImg = `translate(calc(${x} / 20 * 1px), calc(${y} / 20 * 1px))`;
-    setImgStyle({
-      ...imgBaseStyle,
-      transform: transformImg,
-    });
   };
 
   const leave = () => {
