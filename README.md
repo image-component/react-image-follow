@@ -2,7 +2,7 @@
 
 A React image component. The image follow with the mouse.
 
-[![npm](https://img.shields.io/npm/v/react-image-follow?style=flat-square&color=orange)](https://www.npmjs.com/package/react-image-follow) [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) ![](https://github.com/image-component/react-image-follow/workflows/ci/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/react-image-follow/main?color=%23722ed1&style=flat-square) [![codecov](https://codecov.io/gh/image-component/react-image-follow/branch/main/graph/badge.svg?token=PYD7S8BHOB)](https://codecov.io/gh/image-component/react-image-follow) ![](https://img.shields.io/npm/dt/react-image-follow?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/react-image-follow?style=flat-square&color=red)
+[![npm](https://img.shields.io/npm/v/react-image-follow?style=flat-square&color=orange)](https://www.npmjs.com/package/react-image-follow) [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) ![](https://github.com/image-component/react-image-follow/workflows/CI/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/react-image-follow/main?color=%23722ed1&style=flat-square) [![codecov](https://codecov.io/gh/image-component/react-image-follow/branch/main/graph/badge.svg?token=PYD7S8BHOB)](https://codecov.io/gh/image-component/react-image-follow) ![](https://img.shields.io/npm/dt/react-image-follow?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/react-image-follow?style=flat-square&color=red)
 
 ## 📚 Example
 
@@ -45,7 +45,6 @@ export default () => (
 | radius    | The border radius of the component. | number        | ✖        | 8       | 1.0.0   |
 | src       | The src of the image.               | string        | ✔        | -       | 1.0.0   |
 | style     | Component extra style.              | CSSProperties | ✖        | -       | 1.0.0   |
-| width     | The width of the component.         | number        | ✖        | 300     | 1.0.0   |
 | height    | The height of the component.        | number        | ✖        | 200     | 1.0.0   |
 | href      | Component click link                | string        | ✖        | -       | 1.0.0   |
 

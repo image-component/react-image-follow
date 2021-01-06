@@ -16,7 +16,6 @@ const App = () => {
       <ImageFollow
         href="https://github.com/image-component/react-image-follow"
         src={src}
-        width={600}
         height={400}
       >
         <h1 style={{ color: '#fff' }}>Can Click</h1>

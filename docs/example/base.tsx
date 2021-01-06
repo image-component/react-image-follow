@@ -13,7 +13,7 @@ const src =
 const App = () => {
   return (
     <div className="demo">
-      <ImageFollow src={src} width={600} height={400} />
+      <ImageFollow src={src} height={400} />
     </div>
   );
 };
