@@ -66,6 +66,10 @@ const ImageFollow = (props: ImageFollowProps) => {
   };
 
   const leave = () => {
+    setWrapperStyle({
+      ...wrapperBaseStyle,
+      transform: 'none',
+    });
     setImgStyle({
       ...imgBaseStyle,
       transform: 'none',
