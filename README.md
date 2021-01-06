@@ -45,7 +45,6 @@ export default () => (
 | radius    | The border radius of the component. | number        | ✖        | 8       | 1.0.0   |
 | src       | The src of the image.               | string        | ✔        | -       | 1.0.0   |
 | style     | Component extra style.              | CSSProperties | ✖        | -       | 1.0.0   |
-| height    | The height of the component.        | number        | ✖        | 200     | 1.0.0   |
 | href      | Component click link                | string        | ✖        | -       | 1.0.0   |
 
 ## 🔨 Development
