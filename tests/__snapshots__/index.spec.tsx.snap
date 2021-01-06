@@ -9,7 +9,6 @@ exports[`temp render 1`] = `
     style={
       Object {
         "borderRadius": "8px",
-        "height": "200px",
       }
     }
     target="_blank"

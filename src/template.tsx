@@ -7,7 +7,6 @@ type ImageFollowProps = {
   radius?: number;
   src: string;
   style?: React.CSSProperties;
-  height?: number;
   href?: string;
   children?: React.ReactNode;
 };
@@ -15,16 +14,7 @@ type ImageFollowProps = {
 export { ImageFollowProps };
 
 const ImageFollow = (props: ImageFollowProps) => {
-  const {
-    alt,
-    className,
-    radius = 8,
-    src,
-    style,
-    height = 200,
-    href,
-    children,
-  } = props;
+  const { alt, className, radius = 8, src, style, href, children } = props;
 
   const [cardStyle, setCardStyle] = React.useState({});
   const [wrapperStyle, setWrapperStyle] = React.useState({});
@@ -33,7 +23,6 @@ const ImageFollow = (props: ImageFollowProps) => {
   const cardRef = React.useRef<HTMLElement>();
 
   const cardBaseStyle = {
-    height: `${height}px`,
     borderRadius: `${radius}px`,
     ...style,
   };
