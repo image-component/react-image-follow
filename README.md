@@ -6,7 +6,7 @@ A React image component. The image follow with the mouse.
 
 ## 📚 Example
 
-Online Preview: https://image-component.github.io/react-image-follow
+Online Preview: https://image-component.github.io/react-image-follow/
 
 ## 🌀 Template
 
